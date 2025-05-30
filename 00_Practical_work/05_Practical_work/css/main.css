@@ -1,0 +1,26 @@
+.Task1{
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.Task2{
+    align-items: center;
+    font-weight: bold;
+    flex:auto;
+}
+.text{
+    display: none;
+}
+
+.Task3{
+    display: flex;
+    gap: 10px;
+    align-self: start;
+}
+.Task3 div{
+    background-color: blue;
+    width: 60px;
+    padding-left: 10px;
+}
