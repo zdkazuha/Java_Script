@@ -28,11 +28,11 @@ document.querySelector("button").addEventListener("click", () => {
 
     p.forEach(el => el.style.backgroundColor = "gray");
 
-    if (number == 0)
+    if (number === 0)
          p[0].style.backgroundColor = "green";
-    else if (number == 1)
+    else if (number === 1)
          p[1].style.backgroundColor = "orange";
-    else if (number == 2)
+    else if (number === 2)
          p[2].style.backgroundColor = "red";
 
     number = (number + 1) % 3;
