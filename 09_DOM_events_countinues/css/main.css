@@ -1,0 +1,39 @@
+.red{
+    height: 500px;
+    width: 500px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green{
+    height: 350px;
+    width: 350px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.block{
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    border: solid 5px black;
+}
