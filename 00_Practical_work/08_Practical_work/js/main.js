@@ -62,21 +62,24 @@ let btnApple = document.querySelector("#addApple");
 let btnEggs = document.querySelector("#addEggs");
 
 btnFish.onclick = () => {
-    let div = createElement_("Fish", "./img/Food_C205-128.png");
+    let div = createElement_("Fish", "./img/Food_C205-128.png","https://cookpad.com/ua/search/%D1%80%D0%B8%D0%B1%D0%B0");
     products.appendChild(div);
 };
 btnApple.onclick = () => {
-    let div = createElement_("Apple", "./img/Food_C240-128.png");
+    let div = createElement_("Apple", "./img/Food_C240-128.png","https://www.russianfood.com/recipes/bytype/?fid=1133");
     products.appendChild(div);
 };
 btnEggs.onclick = () => {
-    let div = createElement_("Eggs", "./img/Food_C203-128.png");
+    let div = createElement_("Eggs", "./img/Food_C203-128.png","https://cookpad.com/ua/search/%D1%8F%D0%B9%D1%86%D1%8F");
     products.appendChild(div);
 };
 
-function createElement_(name, src) {
+function createElement_(name, src,href) {
     let div = document.createElement("div");
     div.classList.add("product");
+
+    let a = document.createElement("a");
+    a.href = href
 
     let img = document.createElement("img");
     img.src = src;
@@ -84,7 +87,9 @@ function createElement_(name, src) {
     let p = document.createElement("p");
     p.textContent = name;
 
-    div.appendChild(img);
+    a.appendChild(img)
+
+    div.appendChild(a);
     div.appendChild(p);
 
     return div;
