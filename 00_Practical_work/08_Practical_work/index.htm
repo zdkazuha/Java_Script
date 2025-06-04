@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08_Practical_work</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <h2>Create New Car</h2>
+    <form name="carForm">
+        <label>Model:
+            <input type="text" name="model">
+        </label>
+        <label>Year:
+            <input type="number" name="year">
+        </label>
+        <label>Color:
+            <input type="color" name="color">
+        </label>
+        <label>Speed:
+            <input type="number" name="speed">
+        </label>
+        <label>Producer:
+            <select name="producer">
+                <option value="bmw">BMW</option>
+                <option value="tesla">Tesla</option>
+                <option value="gord">Ford</option>
+                <option value="mersedes">Mersedes</option>
+            </select>
+        </label>
+        <label>Electro:
+            <input type="checkbox" name="electro">
+        </label>
+        <button type="reset">Cancel</button>
+        <button id="addBtn" type="submit">Create</button>
+    </form>
+
+    <h2>Car List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Color</th>
+                <th>Speed</th>
+                <th>Producer</th>
+                <th>Electro</th>
+            </tr>
+        </thead>
+        <tbody id="car-list">
+            <tr>
+                <td>Ford_1</td>
+                <td>2020</td>
+                <td>240</td>
+                <td>200</td>
+                <td>Ford</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="center">
+        <button id="clearAllBtn">Clear All</button>
+    </div>
+
+    <script src="./js/car.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
