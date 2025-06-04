@@ -161,6 +161,9 @@ function Task5(text) {
 console.log(Task5("aba"))
 
 function Task6(text) {
-    
+    let arr = text.split("/");
+    return arr.join("");
 }
+
+console.log(Task6("Привіт/z/"))
 
