@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09_practical_work</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <button id="newWindowBtn">New Window</button>
+
+    <script>
+        const btn = document.getElementById("newWindowBtn");
+        btn.onclick = function() {
+            let newWin = window.open("http://127.0.0.1:5500/00_Practical_work/09_Practical_work/index.html", "09_Practical_work", "width=410,height=410");
+            setTimeout(() => {
+        newWin.resizeTo(500, 500); 
+
+        setTimeout(() => {
+            newWin.moveTo(200, 200); 
+
+            setTimeout(() => {
+                newWin.close();
+            }, 2000);
+
+        }, 2000);
+
+    }, 2000);
+        };
+    </script>
+
+    <div class="Task1">
+        <p></p>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
