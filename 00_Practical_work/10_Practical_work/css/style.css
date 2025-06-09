@@ -1,0 +1,40 @@
+.body {
+    margin: 20px;
+}
+
+br {
+    color: gray;
+}
+
+.Task1 {
+    display: flex;
+}
+
+.User {
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    background-color: gray;
+}
+
+.Info {
+    padding: 200px 20px 20px 20px;
+    width: 300px;
+    height: 320px;
+    background-color: gray;
+}
+
+img {
+    padding-bottom: 50px;
+    padding-top: 30px;
+    width: 240px;
+    height: 240px;
+}
+
+input {
+    margin: 0px;
+    margin-left: 160px;
+    padding-top: 10px;
+    width: 130px;
+    height: 10px;
+}
