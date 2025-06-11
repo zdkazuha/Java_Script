@@ -1,0 +1,74 @@
+
+.Task1 {
+    background-color: #555;
+    width: 400px;
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+}
+  
+.blocks {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 5px;
+    height: 100%;
+    overflow: hidden;
+}
+  
+.blocks p {
+    width: 50px;
+    height: 25px;
+    margin: 0;
+}
+  
+.Task1 button {
+    height: 30px;
+    width: 100%;
+}
+
+
+.Task2{
+    width: 400px;
+    height: 120px;
+    border-radius: 20px;
+    border-color: gray;
+    border: solid 5px gray;
+    display: flex;
+    margin-top: 100px;
+}
+
+.Task2_1 {
+    width: 300px;
+    margin: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border-color: white;
+    border: solid 2px white;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.Task2_1 p{
+    width: 70px;
+    height: 70px;
+    background-color: gray;
+    border-radius: 30px;
+}
+
+.Task2_1 :last-child{
+    margin-right: 5px;
+}
+
+
+.Task2_1 :first-child{
+    margin-left: 5px;
+}
+
+button{
+    width: 80px;
+    height: 100px;
+    margin: 10px 10px 0px 0px;
+}
