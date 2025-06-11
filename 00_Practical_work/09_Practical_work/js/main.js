@@ -34,47 +34,50 @@ time = setInterval(() => {
 }, 1000);
 
 
+let isBlocked = false;
+
 wrappers.forEach(wrapper => {
     let img = wrapper.querySelector('img');
     let overlay = wrapper.querySelector('.overlay');
 
     overlay.addEventListener('click', () => {
+        if (isBlocked || !img.classList.contains('hidden')) return;
+
         img.classList.remove('hidden');
         overlay.style.display = 'none';
-
         arr.push(img);
 
         if (arr.length === 2) {
             if (arr[0].getAttribute("src") === arr[1].getAttribute("src")) {
                 arr = [];
-
                 points += 2;
                 document.querySelector(".points1").textContent = points;
 
                 if (points === 16) {
                     clearInterval(time);
                     setTimeout(() => {
-                        alert(`Ви прошли гру за ${seconds} секунд`)
+                        alert(`Ви пройшли гру за ${seconds} секунд`);
                         location.reload();
                     }, 2000);
                 }
             } else {
+                isBlocked = true;
+
                 setTimeout(() => {
                     arr[0].classList.add('hidden');
-                    const overlay1 = arr[0].parentElement.querySelector('.overlay');
-                    overlay1.style.display = 'flex';
-
+                    arr[0].parentElement.querySelector('.overlay').style.display = 'flex';
 
                     arr[1].classList.add('hidden');
-                    const overlay2 = arr[1].parentElement.querySelector('.overlay');
-                    overlay2.style.display = 'flex';
+                    arr[1].parentElement.querySelector('.overlay').style.display = 'flex';
 
                     arr = [];
-                }, 200);
+                    isBlocked = false;
+                }, 1000);
             }
         }
     });
 });
+
 
 function startGame() {
     let images = [
