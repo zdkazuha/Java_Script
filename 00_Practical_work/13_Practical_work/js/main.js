@@ -40,16 +40,6 @@ $("button.next").on('click', function () {
     number = (number + 1) % 3;
 });
 
-// $(".StarRating p").on('click', function () {
-//     let $p = $(".StarRating p");
-//     let index = $(this.data-id)
-
-//     $p.each(function (i) {
-//         this.style.backgroundColor = i <= index ? "yellow" : "gray";
-//     });
-// });
-
-
 $(".Star p").on('click', function () {
     let $p = $(".Star p");
     let index = +$(this).data('id');
