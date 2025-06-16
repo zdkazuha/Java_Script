@@ -14,6 +14,13 @@ $("button.addBlock").on('click', function() {
     $(".blocks").append(`<p style="background-color: ${getColor()};"></p>`);
 });
 
+$(".blocks").on("dblclick", function(e) {
+    if (e.target.tagName === "P") {
+        e.target.remove();
+    }
+});
+
+
 //
 
 let number = 0;
@@ -31,4 +38,23 @@ $("button.next").on('click', function () {
          $p[2].style.backgroundColor = "red";
 
     number = (number + 1) % 3;
+});
+
+// $(".StarRating p").on('click', function () {
+//     let $p = $(".StarRating p");
+//     let index = $(this.data-id)
+
+//     $p.each(function (i) {
+//         this.style.backgroundColor = i <= index ? "yellow" : "gray";
+//     });
+// });
+
+
+$(".Star p").on('click', function () {
+    let $p = $(".Star p");
+    let index = +$(this).data('id');
+
+    $p.each(function (i) {
+        this.style.color = (i + 1) <= index ? "yellow" : "gray";
+    });
 });

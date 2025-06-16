@@ -72,3 +72,30 @@ button{
     height: 100px;
     margin: 10px 10px 0px 0px;
 }
+
+.StarRating  {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 20px;
+    width: 200px;
+    height: 55px;
+    border: solid 2px gray;
+    border-radius: 20px;
+}
+
+.StarRating :first-child {
+    display: flex;
+    padding-left: 10px;
+}
+
+.Star {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.Star p {
+    color: gray;
+    cursor: pointer;
+}
