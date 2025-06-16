@@ -11,8 +11,6 @@ $("button.addBlock").on('click', function() {
         return;
     }
 
-    let p = document.createElement("p");
-
     $(".blocks").append(`<p style="background-color: ${getColor()};"></p>`);
 });
 
