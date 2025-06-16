@@ -27,10 +27,6 @@ function addProductToHtml(i) {
                     </div>`
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    loadProducts();
-})
-
 loadMoreBtn.onclick = () => {
     pagination.next();
     loadProducts();

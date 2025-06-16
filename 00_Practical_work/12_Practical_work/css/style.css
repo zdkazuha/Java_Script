@@ -7,16 +7,16 @@
     font-weight: bold;
     margin-left: 300px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-.Task1 button {
+.Task1 input {
     margin-left: 20px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
-    background-color: #4CAF50;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 5px;;
+    font-size: 20px;
+    font-family: "Arial";
+    height: 35px;
 }
