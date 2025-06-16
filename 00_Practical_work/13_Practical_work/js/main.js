@@ -14,10 +14,6 @@ $("button.addBlock").on('click', function() {
     $(".blocks").append(`<p style="background-color: ${getColor()};"></p>`);
 });
 
-function getColor() {
-    return `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`;
-}
-
 //
 
 let number = 0;
