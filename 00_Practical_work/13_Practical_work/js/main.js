@@ -14,7 +14,6 @@ $("button.addBlock").on('click', function() {
     $(".blocks").append(`<p style="background-color: ${getColor()};"></p>`);
 });
 
-<<<<<<< HEAD
 $(".blocks").on("dblclick", function(e) {
     if (e.target.tagName === "P") {
         e.target.remove();
@@ -22,8 +21,6 @@ $(".blocks").on("dblclick", function(e) {
 });
 
 
-=======
->>>>>>> d5b04e56b7312f017bb8c6a092c2542e821a23a7
 //
 
 let number = 0;
@@ -42,7 +39,6 @@ $("button.next").on('click', function () {
 
     number = (number + 1) % 3;
 });
-<<<<<<< HEAD
 
 $(".Star p").on('click', function () {
     let $p = $(".Star p");
@@ -52,5 +48,3 @@ $(".Star p").on('click', function () {
         this.style.color = (i + 1) <= index ? "yellow" : "gray";
     });
 });
-=======
->>>>>>> d5b04e56b7312f017bb8c6a092c2542e821a23a7
